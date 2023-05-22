@@ -74,6 +74,11 @@ public class EmployeeRestController {
 
         return dbEmployee;
     }
+    @CrossOrigin(origins = "https://dev113653.service-now.com")
+    @GetMapping("/hello")
+    public String method1() {
+    	return "Hello how are you";
+    }
 
     // add mapping for DELETE /employees/{employeeId} - delete employee
 
